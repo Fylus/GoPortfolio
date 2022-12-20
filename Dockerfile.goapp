@@ -1,0 +1,19 @@
+FROM golang:latest AS build
+
+WORKDIR /GoPortfolio
+COPY ./main.go .
+RUN mkdir -p vendor
+COPY go.mod .
+COPY go.sum .
+RUN go mod vendor
+RUN go build -o MyPortfolioApp main.go
+
+FROM debian
+LABEL maintainer="Markus"
+WORKDIR /app
+COPY --from=build /GoPortfolio/MyPortfolioApp .
+#COPY static/ static/
+#COPY templates/ templates/
+#COPY seiten/ seiten/
+EXPOSE 8080
+CMD ["/app/MyPortfolioApp"]
