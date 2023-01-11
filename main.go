@@ -1,23 +1,22 @@
 package main
 
 import (
+	"flag"
 	"fmt"
 )
 
 func main() {
-	//st := flag.Bool("static", false, "Static")
-	//flag.Parse()
-	//
-	//if *st {
-	//	static()
-	//} else {
-	//	dynamic()
-	//}
+	st := flag.Bool("static", false, "Static")
+	flag.Parse()
+
+	if *st {
+		static()
+	} else {
+		dynamic()
+	}
 
 	buildDatabase()
-	project := Project{Date: 2345}
-	fmt.Println("Project ", project)
-
+	//static()
 }
 
 func static() {
@@ -26,6 +25,5 @@ func static() {
 
 func dynamic() {
 	fmt.Print("Dynamic")
-	//connect with mongodb
-
+	startWebServer()
 }

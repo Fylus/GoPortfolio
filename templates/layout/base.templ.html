@@ -1,0 +1,18 @@
+{{ define "base" }}
+<html lang="en">
+{{ template "head" .}}
+<body>
+<canvas></canvas>
+{{ template "header" . }}
+<main>
+    {{if .Error}}
+        {{ template "404" . }}
+    {{else}}
+        {{ .Content }}
+        {{template "links" .}}
+    {{end}}
+</main>
+{{ template "footer" . }}
+</body>
+</html>
+{{ end }}

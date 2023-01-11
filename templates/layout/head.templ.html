@@ -1,0 +1,15 @@
+{{ define "head" }}
+<head>
+    <title>Markus Fuhlbrügge - {{.Title}}</title>
+    <meta name="description" content="Markus Fuhlbrügge's Portfolio. See my projects here or contact me."/>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="Markus Fuhlbrügge"/>
+    <link rel="stylesheet" type="text/css" href="/static/styles/reset.css">
+    <link rel="stylesheet" type="text/css" href="/static/styles/style.css">
+    {{if .CSS}}
+        <link rel="stylesheet" type="text/css" href="/static/styles/{{.CSS}}.css">
+    {{end}}
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+</head>
+{{ end }}

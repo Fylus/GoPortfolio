@@ -1,0 +1,16 @@
+{{ define "error" }}
+<html lang="en">
+{{ template "head" .}}
+<body>
+<canvas></canvas>
+{{ template "header" . }}
+<main>
+  <div class="error">
+    <h1 class="error-title">404</h1>
+    <h2 class="error-text">Page not found</h2>
+  </div>
+</main>
+{{ template "footer" . }}
+</body>
+</html>
+{{ end }}

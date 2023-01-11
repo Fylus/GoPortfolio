@@ -2,7 +2,11 @@ module GoPortfolio
 
 go 1.19
 
-require go.mongodb.org/mongo-driver v1.11.1
+require (
+go.mongodb.org/mongo-driver v1.11.1
+github.com/gin-gonic/gin v1.8.1
+)
+
 
 require (
 	github.com/golang/snappy v0.0.1 // indirect

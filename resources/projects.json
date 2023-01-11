@@ -1,0 +1,326 @@
+[
+  {
+    "id": "exchange",
+    "name": "[Ex]Change",
+    "date": "2023-09-30",
+    "short": "A international project about a robot. Coming Soon",
+    "long": "This game project started as an international project; the biggest I have ever done so far. With 26 people from Germany, Mexico, and Japan working on the project, it will be a long journey from the initial idea to a fully-fledged game. As of now, we are in the idea generation phase and aiming to have the game finished by the end of September 2023.\n\nThe story so far is that the game follows a small robot who is suddenly forced out of his simple life of cleaning the house. He has to find his way in the big world without humans, and the title of the project - 'Exchange' - suggests that he will have to exchange and upgrade his components in order to be able to best overcome the tasks and obstacles he will face.\n\nAlthough our goal is ambitious, we believe that with enough dedication and hard work, we can make it a reality. We look forward to seeing what we can create together.",
+    "img": "inprogressRobot.png",
+    "categories": [
+      {
+        "name": "Game Development"
+      }
+    ],
+    "software": [
+      {
+        "name": "Unity 3D",
+        "nameID": "unity"
+      },
+      {
+        "name": "Rider",
+        "nameID": "rider"
+      }
+    ],
+    "skills": []
+  },
+  {
+    "id": "mcgoofys",
+    "name": "Mc Goofys",
+    "date": "2022-09-04",
+    "short": "An app for android for creating and ordering burgers",
+    "long": "\"Mc Goofys\" is an Android app that allows users to create and save their own personalized burgers, as well as \"place orders for them\". Furthermore the users can easily customize their burgers by selecting from a variety of patty, toppings, sauces, and bun options. The app was developed using Android Studio in September and is written in Java, with a SQLite database used to store user data and burger information. The inspiration for the app came from McDonald's, which is easily seen in the name \"Mc Goofys.\" Developing the app was a very instructive task, as it involved learning about the various aspects of app development, including coding in Java for Android, setting up a SQLite database, and working with Android Studio. Despite the challenges, you were able to create a functional and user-friendly app that has been well-received by my professor. The main goal of the project was to learn about app development, and you have certainly achieved that goal.",
+    "img": "mcgoofys.png",
+    "categories": [
+      {
+        "name": "Programming"
+      }
+    ],
+    "software": [
+      {
+        "name": "Android Studio",
+        "nameID": "androidstudio"
+      }
+    ],
+    "skills": []
+  },
+  {
+    "id": "nature",
+    "name": "Nature",
+    "date": "2022-08-31",
+    "short": "A movie about two lumberjacks getting in a conflict with nature.",
+    "long": "The goal of this project was to create a short film that not only met the requirements, but also allowed me to try new things and learn. This involved all aspects of film production, from developing the story and creating a storyboard to finding locations and assembling a team, filming, and post-production work such as editing and sound design.\n\nI wanted to tell a story that would be engaging and thought-provoking, and that would not give away the ending right away. To keep the scope of the project manageable, I set some boundaries for the story: it would take place outdoors, at as few locations as possible, and involve no more than three characters.\n\nThe story follows two lumberjacks who encounter a young woman while they are working in the forest. When they try to continue their work despite her presence, something strange happens. The woman turns out to be the personification of Mother Nature, who takes the lumberjacks to a deforested, abandoned field and tells them about the suffering caused by the destruction of millions of square meters of forest every day. The lumberjacks are only following orders, but Mother Nature has had enough and tasks them with delivering a message. However, driven by an unseen force, the lumberjacks turn their tools - an axe and a chainsaw - against each other. What happens next remains a mystery, as Mother Nature sits on the clearing again, feeding fresh blood to new plants and starting the cycle anew.",
+    "img": "nature.jpg",
+    "categories": [
+      {
+        "name": "Movie"
+      }
+    ],
+    "software": [
+      {
+        "name": "Adobe Premiere",
+        "nameID": "premiere"
+      },
+      {
+        "name": "Adobe After Effects",
+        "nameID": "aftereffects"
+      }
+    ],
+    "skills": []
+  },
+  {
+    "id": "testrobot",
+    "name": "Test Your Robot",
+    "date": "2022-07-22",
+    "short": "Short Puzzle game where you control a robot.",
+    "long": "The project \"Test Your Robot\" was my attempt to learn more about programming and game design by creating a puzzle game with a robot character. I was determined to use all the important Unity features such as physics, character control, particles, spritemaps, text events, and more. I worked on the project alone, and it was a great challenge, pushing me to understand how software engineering and game design work together. After months of hard work, I was able to complete the project and was proud of the end result. I am now a more experienced programmer and game designer, and I look forward to continuing to build upon these skills in the future.",
+    "img": "testrobot.JPG",
+    "categories": [
+      {
+        "name": "Game Development"
+      }
+    ],
+    "software": [
+      {
+        "name": "Unity 3D",
+        "nameID": "unity"
+      },
+      {
+        "name": "Blender",
+        "nameID": "blender"
+      },
+      {
+        "name": "Rider",
+        "nameID": "rider"
+      }
+    ],
+    "skills": [
+      {
+        "name": "Plastic SCM",
+        "nameID": 5
+      }
+    ]
+  },
+  {
+    "id": "jellosjourney",
+    "name": "Jellos Journey",
+    "date": "2022-06-20",
+    "short": "A Unity Game where you can play as a jello to get through a world full of obstacles.",
+    "long": "Our game, 'Jellos Journey', follows the adventures of a cute and determined pudding as it hops through a captivating and vibrant world, with an array of obstacles, enemies, and puzzles that challenge its journey. Developed by a team of 5, I took on the roles of both programmer and project manager, using Unity 3D - a powerful game engine - to bring the game to life and to create a truly immersive experience for players. \n\nIn addition to the programming and development management, we also utilized Plastic SCM for version control. This was a student project that was created with the goal of bringing fun and adventure to players of all ages.\n\nOur hard work paid off when 'Jellos Journey' won the 'MINFF' award at the Harz University, recognizing its success as a high-quality project. We hope that players will enjoy joining our wobbly hero on its quest for victory and solving the mysteries of the game world.",
+    "img": "JelloMenu.JPG",
+    "categories": [
+      {
+        "name": "Game Development"
+      },
+      {
+        "name": "3D Art"
+      }
+    ],
+    "software": [
+      {
+        "name": "Unity 3D",
+        "nameID": "unity"
+      },
+      {
+        "name": "Blender",
+        "nameID": "blender"
+      },
+      {
+        "name": "Rider",
+        "nameID": "rider"
+      }
+    ],
+    "skills": [
+      {
+        "name": "Plastic SCM",
+        "nameID": 5
+      }
+    ]
+  },
+  {
+    "id": "modcrates",
+    "name": "ModCrates",
+    "date": "2022-06-15",
+    "short": "A prototype of a revolutionary fridge and storage system.",
+    "long": "The project \"Modcrates\" was much more than a 3D modeling, texturing, and animation challenge - it was a true product design project, with the team members working together to plan, conceive, design, develop application examples, create user stories, and develop marketing strategies. We had to think beyond the actual design of the refrigerator; we had to learn project management as well. We had to take into consideration the entire scope of the project, from the idea generation to the prototyping process and the marketing aspect of it. Every step of the way, we had to work together, brainstorming and discussing ideas to make the project successful. After countless hours of hard work and dedication, we ended up with a great prototype to show for our efforts. It was definitely a rewarding experience, and another project that will help us continue to grow.",
+    "img": "fridge.jpg",
+    "categories": [
+      {
+        "name": "3D Art"
+      },
+      {
+        "name": "Product Design"
+      }
+    ],
+    "software": [
+      {
+        "name": "Blender",
+        "nameID": "blender"
+      }
+    ],
+    "skills": []
+  },
+  {
+    "id": "wizardroom",
+    "name": "Wizards Office",
+    "date": "2022-02-28",
+    "short": "A 3D Render of a the headmasters office at a wizard school using Blender.",
+    "long": "In my Blender project, I created a 3D office for the headmaster of a wizard school. The office was filled with many Easter eggs, such as references to Lord of the Rings and Harry Potter. I used a variety of techniques, including 3D modeling, lighting, and composition, to bring the office to life.\n\nThe office was designed to be a fun and immersive environment, with a variety of interesting details and hidden references for fans of fantasy literature and movies. I used Blender's powerful 3D modeling tools to create the various objects and elements of the office, including the desk, chairs, bookshelves, and other furniture.\n\nI also used Blender's lighting and compositing features to create a sense of depth and atmosphere in the office. I placed lights and added shadows and reflections to create a realistic and believable environment. I also used composition techniques, such as camera angles and framing, to create interesting and dynamic views of the office.\n\nOverall, I had a lot of fun creating this Blender project, and I hope that others will enjoy exploring the 3D office and discovering all of the hidden Easter eggs that I have included.",
+    "img": "wizardRender.jpg",
+    "categories": [
+      {
+        "name": "3D Art"
+      }
+    ],
+    "software": [
+      {
+        "name": "Blender",
+        "nameID": "blender"
+      },
+      {
+        "name": "Adobe Photoshop",
+        "nameID": "photoshop"
+      }
+    ],
+    "skills": []
+  },
+  {
+    "id": "moviedatabase",
+    "name": "Movie Database",
+    "date": "2022-02-18",
+    "short": "A Java programm to see, add and alter movies in a database.",
+    "long": "A complex application programmed with Java was developed, with a user interface (UI) designed using JavaFX. This application was meant to allow its users to establish a connection to a MariaDB database, where they would be able to retrieve, store, modify, or delete movies using filters or searches. Additionally, the server area of the application could be accessed from the UI using REST services, thus allowing commands to be sent to the database.\n\nIn the process of developing this application, I learned a great deal about the structure and code reuse of multi-modular Java applications, as well as a variety of programming patterns. This experience was invaluable and has helped to shape my understanding of software engineering principles.",
+    "img": "moviedatabase.JPG",
+    "categories": [
+      {
+        "name": "Programming"
+      }
+    ],
+    "software": [
+      {
+        "name": "IntelliJ IDEA",
+        "nameID": "intellij"
+      }
+    ],
+    "skills": [
+      {
+        "name": "Git",
+        "nameID": 1
+      },
+      {
+        "name": "GitHub",
+        "nameID": 2
+      }
+    ]
+  },
+  {
+    "id": "weinmann",
+    "name": "Weinmann",
+    "date": "2021-08-26",
+    "short": "A corporate identity for a winemaker. Including logo, business cards and mockups.",
+    "long": "As a practice I made an Cooporate Identity (CI) for the winemaker \"Weinmann\". I made a logo, businesscards, letterheads and photorealistic mockups of the winebottles. It was a long process, with many iterations and consultations with my professor. In the end it's something to be proud of.",
+    "img": "weinmann.jpg",
+    "categories": [
+      {
+        "name": "3D Art"
+      },
+      {
+        "name": "Product Design"
+      }
+    ],
+    "software": [
+      {
+        "name": "Blender",
+        "nameID": "blender"
+      },
+      {
+        "name": "Adobe Indesign",
+        "nameID": "indesign"
+      }
+    ],
+    "skills": []
+  },
+  {
+    "id": "racetrack",
+    "name": "Racetrack",
+    "date": "2021-08-14",
+    "short": "An animation of a Racetrack made entirely with the JavaScript library ThreeJS.",
+    "long": "The goal of this JavaScript animation was to utilize the Three.js library, and this was achieved by incorporating features such as 3D techniques like 360-degree cubemaps for the background, as well as hemispheric and point lights, and shadowmaps, to create an immersive environment. Additionally, I used 3D modelling with Blender in order to create the cars and other elements, which were imported as OBJ files, except for the track which was a NURBS curve made in Three.js. In the end, all expectations were met and the result was even more impressive than expected.",
+    "img": "threeJS.JPG",
+    "categories": [
+      {
+        "name": "Programming"
+      }
+    ],
+    "software": [
+      {
+        "name": "Blender",
+        "nameID": "blender"
+      },
+      {
+        "name": "PHPStorm",
+        "nameID": "phpstorm"
+      }
+    ],
+    "skills": []
+  },
+  {
+    "id": "chessboard",
+    "name": "Chess Board",
+    "date": "2021-03-18",
+    "short": "A short photorealistic chess board animation.",
+    "long": "Creating a photorealistic chess game with simple animation in the 3D program Blender was the goal of a project among friends. The challenge was met and the result was well received. In order to achieve the desired photorealism, it was necessary to pay close attention to the geometry of each piece. The knight was the most difficult piece to recreate, as its shape was drastically different from the other pieces. In addition, the bishop posed its own unique challenges, due to its indentations, which needed to be recreated with exacting accuracy if a clean geometry was desired. In the end, the project was a success and the short clip of this animation was enjoyed by all who saw it.",
+    "img": "chess.jpg",
+    "categories": [
+      {
+        "name": "3D Art"
+      }
+    ],
+    "software": [
+      {
+        "name": "Blender",
+        "nameID": "blender"
+      }
+    ],
+    "skills": []
+  },
+  {
+    "id": "donut",
+    "name": "The Donut",
+    "date": "2020-04-25",
+    "short": "The first blender project: The famous donut.",
+    "long": "I, like many others, began my Blender career with the famous donut tutorial from Andrew Price, the Blender Guru. Through this tutorial, I was exposed to the world of 3D art and the fundamentals of Blender, such as modeling, sculpting, texturing, texture painting, particles and animation. The challenge of the tutorial was great, but at the same time, the reward of the outcome was worth it.\n\nLooking back today, I can say that even though the outcome of my first project looks a bit like plastic, it was a good starting point for my career in the 3D and game industry. I hope to continue to use my skills and knowledge to further develop my abilities in the years to come.",
+    "img": "donut.jpg",
+    "categories": [
+      {
+        "name": "3D Art"
+      }
+    ],
+    "software": [
+      {
+        "name": "Blender",
+        "nameID": "blender"
+      }
+    ],
+    "skills": []
+  },
+  {
+    "id": "dunervst",
+    "name": "Du nervst",
+    "date": "2016-06-08",
+    "short": "My final examination project for my training.",
+    "long": "The short film \"Du nervst\" (engl. \"You are annoying\") was a great success, taking second place at the \"FinEx Young Talent Award\" 2013. It was the final examination project for my training at MDR, and provided me with the perfect opportunity to apply all that I had learned throughout my training. I was able to use my skills in film planning, production, camera work, editing, and post production to create the film. Not only did I have the chance to demonstrate my technical abilities, but it also gave me the chance to hone my creative talents and express my artistic vision. The end result was a film that was well-received by all audiences and was a great conclusion to educational journey in television.",
+    "img": "dunervst.JPG",
+    "categories": [
+      {
+        "name": "Movie"
+      }
+    ],
+    "software": [
+      {
+        "name": "Avid Media Composer",
+        "nameID": "avid"
+      }
+    ],
+    "skills": []
+  }
+]

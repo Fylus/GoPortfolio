@@ -1,0 +1,441 @@
+:root {
+    --color-primary-light: rgb(250, 253, 253);
+    --color-primary-border: #1b1b1b;
+    --border-bottom: rgba(255, 255, 255, 0.27);
+    --color-secondary-dark: rgba(36, 125, 111, 0.3);
+    --color-secundary-light: rgb(42, 192, 153);
+    --color-secundary-lighter: rgb(167, 223, 211);
+    --color-grey: rgb(65, 61, 61);
+}
+
+html {
+    color: var(--color-primary-light);
+    scroll-behavior: smooth;
+}
+
+body {
+    position: relative;
+    font-family: sans-serif;
+    min-height: 100vh;
+    background-color: #000;
+    background-image: radial-gradient(90vw at top left, rgba(42, 192, 153, 0.39), transparent),
+    radial-gradient(circle at 90% 80%, rgba(0, 14, 30, 0.73), transparent),
+    radial-gradient(farthest-corner at 80% 80%, rgba(137, 36, 141, 0.29), transparent);
+}
+
+a {
+    color: var(--color-primary-light);
+}
+
+a:active {
+    color: var(--color-secundary-light);
+}
+
+a:focus {
+    color: var(--color-secundary-light);
+}
+
+a:link {
+    color: var(--color-primary-light);
+}
+
+main a:link {
+    color: var(--color-secundary-light);
+}
+
+main a {
+    color: var(--color-secundary-light);
+    text-decoration: none;
+}
+
+main a:hover {
+    color: var(--color-secundary-lighter);
+}
+
+main a:active {
+    color: var(--color-primary-light);
+}
+
+main a:focus {
+    color: var(--color-primary-light);
+}
+
+canvas {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    z-index: -1000;
+}
+
+.burgernav {
+    position: fixed;
+    width: 100%;
+    z-index: 2000;
+}
+
+.burgernav-container {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    width: 100%;
+    background-color: rgba(56, 56, 56, 0.7);
+    z-index: 1000;
+    border-bottom: 2px solid var(--border-bottom);
+    padding: 30px 0 30px 0;
+    opacity: 1;
+    font-size: 1.3em;
+    backdrop-filter: blur(10px);
+    transition: opacity 0.5s ease-in-out;
+}
+
+.hidden {
+    opacity: 0;
+    pointer-events: none;
+    cursor: unset;
+    z-index: -5000;
+}
+
+.burgernav-container a {
+    font-size: 1.3em;
+    width: fit-content;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border: 1px solid transparent;
+    border-radius: 7px;
+    margin: 20px auto;
+    transition: 0.3s;
+}
+
+.burgernav-container > a {
+    margin-top: 50px;
+    margin-bottom: 10px;
+    font-size: 1.9em;
+}
+
+
+.navigation > a:hover,
+.burgernav-container > a:hover {
+    background-color: var(--color-secondary-dark);
+    border: 1px solid var(--color-primary-light);
+    backdrop-filter: blur(2px);
+}
+
+.navigation {
+    display: flex;
+    flex-direction: column;
+    float: unset;
+    height: 100%;
+}
+
+.hamburger .line {
+    width: 40px;
+    height: 4px;
+    background-color: var(--color-primary-light);
+    display: block;
+    margin: 8px auto;
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger.is-active .line {
+    height: 3px;
+}
+
+.hamburger-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50px;
+    height: 40px;
+    padding: 15px;
+    z-index: 1000;
+    margin: 8px 4px;
+    cursor: pointer;
+    border-radius: 10px;
+    transition: transform .5s ease-in-out;
+}
+
+.hamburger-container:hover {
+    transform: scale(1.1);
+}
+
+.hamburger {
+    -webkit-transition: all 0.3s ease-in-out;
+    -o-transition: all 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
+}
+
+.hamburger.is-active {
+    animation: smallbig 0.6s forwards;
+}
+
+@keyframes smallbig {
+    0%, 100% {
+        -webkit-transform: scale(1);
+        -ms-transform: scale(1);
+        -o-transform: scale(1);
+        transform: scale(1);
+    }
+
+    50% {
+        -webkit-transform: scale(0);
+        -ms-transform: scale(0);
+        -o-transform: scale(0);
+        transform: scale(0);
+    }
+}
+
+#hamburger.is-active .line:nth-child(1),
+#hamburger.is-active .line:nth-child(2),
+#hamburger.is-active .line:nth-child(3) {
+    -webkit-transition-delay: 0.2s;
+    -o-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+
+#hamburger.is-active .line:nth-child(2) {
+    opacity: 0;
+}
+
+#hamburger.is-active .line:nth-child(1) {
+    -webkit-transform: translateY(11px) rotate(45deg);
+    -ms-transform: translateY(11px) rotate(45deg);
+    -o-transform: translateY(11px) rotate(45deg);
+    transform: translateY(11px) rotate(45deg);
+}
+
+#hamburger.is-active .line:nth-child(3) {
+    -webkit-transform: translateY(-11px) rotate(-45deg);
+    -ms-transform: translateY(-11px) rotate(-45deg);
+    -o-transform: translateY(-11px) rotate(-45deg);
+    transform: translateY(-11px) rotate(-45deg);
+}
+
+
+main {
+    padding-top: 30px;
+    padding-bottom: 50px;
+}
+
+.wrapper {
+    max-width: 1440px;
+    padding: 0 10px 0 60px;
+}
+
+h1 {
+    font-size: 3em;
+    color: var(--color-primary-light);
+    text-align: center;
+    margin: 0 0.5em;
+}
+
+h2 {
+    font-size: 1.5em;
+    color: var(--color-primary-light);
+    text-align: center;
+}
+
+.error {
+    width: 80%;
+    margin: 0 auto;
+    padding-top: 30vh;
+    font-size: 2em;
+}
+
+
+.links {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    display: flex;
+    z-index: 1;
+    flex-direction: column;
+}
+
+.links a {
+    position: relative;
+    transition: 0.5s ease;
+    width: 40px;
+    height: 40px;
+    margin: 10px 12px;
+}
+
+.links .logo_color, .links .logo_sw {
+    position: absolute;
+}
+
+.links .logo_sw {
+    opacity: 1;
+    transition: 0.32s ease-in;
+}
+
+.links .logo_color {
+    z-index: 2;
+    opacity: 0;
+    transition: opacity .35s ease-out, transform 1s ease-out;
+}
+
+.links a:hover {
+    transform: scale(1.2);
+}
+
+.links a:hover .logo_color {
+    opacity: 1;
+}
+
+.links a:hover .logo_sw {
+    opacity: 0;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    /*background-color: chartreuse;*/
+    color: var(--color-primary-light);
+    font-size: 15px;
+    padding: 10px 0;
+    z-index: 0;
+}
+
+footer > * {
+    float: right;
+    /*float right reversed*/
+    margin: 0 5px;
+}
+
+footer > * > * {
+    float: left;
+    margin: 0 5px;
+}
+
+
+footer a {
+    color: var(--color-primary-light);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+footer a:hover {
+    color: var(--color-primary-light);
+    text-decoration: underline;
+}
+
+.box {
+    border-radius: 10px;
+    background: rgba(61, 69, 72, 0.71);
+    backdrop-filter: blur(2px);
+    margin: 0 10px;
+    padding: 10px;
+}
+
+
+.impressumdiv {
+    /*border: 1px solid var(--color-primary-light);*/
+    border-radius: 10px;
+    background: rgba(61, 69, 72, 0.71);
+    backdrop-filter: blur(2px);
+    margin: 100px 10px 0;
+    padding: 10px;
+}
+
+.impressumdiv h3 {
+    color: var(--color-primary-light);
+    font-size: 1.8em;
+    margin: .2em 0;
+}
+
+.impressumdiv p {
+    color: var(--color-primary-light);
+    padding: 5px 10px;
+    text-align: justify;
+}
+
+.impressumdiv a {
+    color: var(--color-secundary-light);
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+strong {
+    font-weight: bold;
+}
+
+@media screen and (min-width: 650px) {
+
+    .navigation {
+        display: block;
+        float: right;
+        height: 100%;
+    }
+
+    .navigation > a {
+        display: unset;
+        margin: 0 10px;
+    }
+
+    .burgernav-container {
+        /*position: relative;*/
+        box-sizing: border-box;
+        display: block;
+        width: 100%;
+        padding: 30px 80px 30px 10px;
+        background-color: rgba(39, 57, 69, 0.4);
+        font-size: 1em;
+        backdrop-filter: blur(5px) brightness(.7);
+    }
+
+    .burgernav-container > a {
+        margin: 20px auto;
+        font-size: 1.3em;
+    }
+
+
+}
+
+@media only screen and (min-width: 1280px)  and (min-height: 500px) {
+
+    .wrapper {
+        padding: 0 10px 0 90px;
+    }
+
+    .box {
+        padding: 20px 40px;
+        margin: 0 15px;
+    }
+
+
+    .links a {
+        width: 60px;
+        height: 50px;
+        margin: 20px 15px;
+    }
+
+    h1 {
+        white-space: nowrap;
+    }
+
+    .box {
+        padding: 20px 40px;
+        margin: 0;
+    }
+}
+
+@media only screen and (min-width: 1640px) {
+
+    .wrapper {
+        padding: 0 10px;
+        margin: 0 auto;
+    }
+}
+
+@media only screen and (min-width: 2160px) {
+    .links {
+        flex-direction: row;
+    }
+}

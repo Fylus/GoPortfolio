@@ -1,0 +1,68 @@
+{{ define "home" }}
+<html lang="en">
+{{ template "head" .}}
+<body>
+<canvas></canvas>
+{{ template "header" . }}
+<main>
+  <div id="aboutmediv">
+    <div>
+      <h1>
+        Markus Fuhlbrügge
+      </h1>
+      <div id="flip">
+        <div>
+          <h2>
+            Game Developer
+          </h2>
+        </div>
+        <div>
+          <h2>
+            3D Artist
+          </h2>
+        </div>
+        <div>
+          <h2>
+            Media Designer
+          </h2>
+        </div>
+        <div>
+          <h2>
+            Game Developer
+          </h2>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="wrapper">
+    <div class="homecontent">
+      {{template "categories" .}}
+      <div class='divider'></div>
+
+      <div class="cv">
+        <div class="category">
+          <h2>
+            About me
+          </h2>
+        </div>
+        <div class="skills" id="skills">
+          {{template "skills" .}}
+        </div>
+      </div>
+      <div class='divider'></div>
+      <div class="contact" id="contact">
+        <h2>
+          Contact me here
+        </h2>
+        <a href="mailto:info@markusfuhlbruegge.de">
+          <img src="/static/graphics/mail.png" alt="mail">
+        </a>
+      </div>
+    </div>
+  </div>
+  {{template "links" .}}
+</main>
+{{ template "footer" . }}
+</body>
+</html>
+{{ end }}
