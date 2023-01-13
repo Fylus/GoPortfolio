@@ -1,3 +1,103 @@
 {{define "skills"}}
-Here are skills.
+<div class="skill">
+    <div class="skilllist">
+        <table>
+            <caption class="skillname">Education</caption>
+            <tr>
+                <th>Year</th>
+                <th>Education</th>
+                <th>Location</th>
+            </tr>
+            {{range .Education}}
+            <tr>
+                <td class="year">{{.year}}</td>
+                <td>{{.title}}</td>
+                <td>{{.location}}</td>
+            </tr>
+            {{end}}
+        </table>
+    </div>
+</div>
+
+<div class="skill">
+    <div class="skilllist">
+        <table>
+            <caption class="skillname">Programming</caption>
+            <tr>
+                <th>Language</th>
+                <th>Level</th>
+            </tr>
+            {{range .ProgLang}}
+            <tr>
+                <td>{{.name}}</td>
+                <td>{{.level}}</td>
+            </tr>
+            {{end}}
+        </table>
+    </div>
+</div>
+
+<div class="skill">
+    <div class="skilllist">
+        <table>
+            <caption class="skillname">Software</caption>
+            <tr>
+                <th>Software</th>
+                <th>Level</th>
+            </tr>
+            {{range .Software}}
+            <tr>
+                <td><a href='tool/{{.id}}'>{{.name}}</a></td>
+                <td>{{.level}}</td>
+            </tr>
+            {{end}}
+        </table>
+    </div>
+</div>
+
+<div class="skill">
+    <div class="skilllist">
+        <table>
+            <caption class="skillname">Other</caption>
+            <tr>
+                <th>Skill</th>
+            </tr>
+            {{range .OtherSkills}}
+            <tr>
+                <td>{{.name}}</td>
+            </tr>
+            {{end}}
+        </table>
+    </div>
+</div>
+
+<div class="skill">
+    <div class="skilllist">
+        <table>
+            <caption class="skillname">Languages</caption>
+            <tr>
+                <th>Language</th>
+                <th>Level</th>
+            </tr>
+            {{range .Languages}}
+            <tr>
+                <td>{{.name}}</td>
+                <td>{{.level}}</td>
+            </tr>
+            {{end}}
+        </table>
+    </div>
+</div>
+
+
+<div class="skill">
+    <div class="resume">
+        <div class="skillname">
+            <h3>Full resume and skills</h3>
+        </div>
+        <a id="linkedin" href="https://www.linkedin.com/in/markus-fuhlbr%C3%BCgge-22b3b214a" target="_blank">
+            LinkedIn
+        </a>
+    </div>
+</div>
 {{end}}

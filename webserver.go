@@ -3,7 +3,7 @@ package main
 import (
 	"flag"
 	"github.com/gin-gonic/gin"
-	"html/template"
+	"go.mongodb.org/mongo-driver/bson"
 	"log"
 	"net/http"
 	"path/filepath"
@@ -31,12 +31,23 @@ func startWebServer() {
 	router.NoRoute(pageNotFound)
 	router.GET("/", makeHomeHandler)
 	router.GET("/impressum", impressumHandler)
-	//router.GET("/impressum/:topic", blogHandler)
+	router.GET("/project/:projectID", projectHandler)
+	router.GET("/tool/:toolID", toolHandler)
 	log.Print("Listening on :9000 ....")
 	err := router.Run(":9000")
 	if err != nil {
 		log.Fatal("Error starting web server: ", err)
 	}
+}
+
+func toolHandler(context *gin.Context) {
+	tool, status := getToolFromDatabase(context.Param("toolID"))
+	context.HTML(status, productTempl, tool)
+}
+
+func projectHandler(context *gin.Context) {
+	product, status := getProjectFromDatabase(context.Param("projectID"))
+	context.HTML(status, productTempl, product)
 }
 
 func impressumHandler(context *gin.Context) {
@@ -50,19 +61,49 @@ func pageNotFound(c *gin.Context) {
 }
 
 func makeHomeHandler(c *gin.Context) {
-	ps := Page{Title: "Home", CSS: "home"}
-	c.HTML(http.StatusNotFound, homeTempl, ps)
+	type Home struct {
+		Page
+		Categories  map[string][]bson.M
+		Education   []bson.M
+		ProgLang    []bson.M
+		Software    []bson.M
+		OtherSkills []bson.M
+		Languages   []bson.M
+	}
+	getSkillsFromDatabase()
+
+	home := Home{
+		Page: Page{
+			Title: "Portfolio",
+			CSS:   "home",
+		},
+		Categories:  getAllProjectsInCategories(),
+		Education:   getEducationFromDatabase(),
+		ProgLang:    getProgLangFromDatabase(),
+		Software:    getSoftwareFromDatabase(),
+		OtherSkills: getOtherSkillsFromDatabase(),
+		Languages:   getLanguageFromDatabase(),
+	}
+	// fill struct Home
+	c.HTML(http.StatusOK, homeTempl, home)
 }
 
 type Page struct {
-	Title   string
-	CSS     string
-	Content template.HTML
+	Title string
+	CSS   string
+	Product
 }
 
 type Product struct {
-	Title   string
-	Content template.HTML
-	Image   string
-	Table   []string
+	Description string
+	Image       string
+	Table       map[string][]bson.M
+	Type        string
+	External    string
+	Noproduct   bool
+}
+
+type TableMap struct {
+	Name    string
+	Content []string
 }

@@ -14,11 +14,11 @@
     "software": [
       {
         "name": "Unity 3D",
-        "nameID": "unity"
+        "id": "unity"
       },
       {
         "name": "Rider",
-        "nameID": "rider"
+        "id": "rider"
       }
     ],
     "skills": []
@@ -38,7 +38,7 @@
     "software": [
       {
         "name": "Android Studio",
-        "nameID": "androidstudio"
+        "id": "androidstudio"
       }
     ],
     "skills": []
@@ -58,11 +58,11 @@
     "software": [
       {
         "name": "Adobe Premiere",
-        "nameID": "premiere"
+        "id": "premiere"
       },
       {
         "name": "Adobe After Effects",
-        "nameID": "aftereffects"
+        "id": "aftereffects"
       }
     ],
     "skills": []
@@ -82,21 +82,21 @@
     "software": [
       {
         "name": "Unity 3D",
-        "nameID": "unity"
+        "id": "unity"
       },
       {
         "name": "Blender",
-        "nameID": "blender"
+        "id": "blender"
       },
       {
         "name": "Rider",
-        "nameID": "rider"
+        "id": "rider"
       }
     ],
     "skills": [
       {
         "name": "Plastic SCM",
-        "nameID": 5
+        "id": 5
       }
     ]
   },
@@ -118,21 +118,21 @@
     "software": [
       {
         "name": "Unity 3D",
-        "nameID": "unity"
+        "id": "unity"
       },
       {
         "name": "Blender",
-        "nameID": "blender"
+        "id": "blender"
       },
       {
         "name": "Rider",
-        "nameID": "rider"
+        "id": "rider"
       }
     ],
     "skills": [
       {
         "name": "Plastic SCM",
-        "nameID": 5
+        "id": 5
       }
     ]
   },
@@ -154,7 +154,7 @@
     "software": [
       {
         "name": "Blender",
-        "nameID": "blender"
+        "id": "blender"
       }
     ],
     "skills": []
@@ -174,11 +174,11 @@
     "software": [
       {
         "name": "Blender",
-        "nameID": "blender"
+        "id": "blender"
       },
       {
         "name": "Adobe Photoshop",
-        "nameID": "photoshop"
+        "id": "photoshop"
       }
     ],
     "skills": []
@@ -198,17 +198,17 @@
     "software": [
       {
         "name": "IntelliJ IDEA",
-        "nameID": "intellij"
+        "id": "intellij"
       }
     ],
     "skills": [
       {
         "name": "Git",
-        "nameID": 1
+        "id": 1
       },
       {
         "name": "GitHub",
-        "nameID": 2
+        "id": 2
       }
     ]
   },
@@ -230,11 +230,11 @@
     "software": [
       {
         "name": "Blender",
-        "nameID": "blender"
+        "id": "blender"
       },
       {
         "name": "Adobe Indesign",
-        "nameID": "indesign"
+        "id": "indesign"
       }
     ],
     "skills": []
@@ -254,11 +254,11 @@
     "software": [
       {
         "name": "Blender",
-        "nameID": "blender"
+        "id": "blender"
       },
       {
         "name": "PHPStorm",
-        "nameID": "phpstorm"
+        "id": "phpstorm"
       }
     ],
     "skills": []
@@ -278,7 +278,7 @@
     "software": [
       {
         "name": "Blender",
-        "nameID": "blender"
+        "id": "blender"
       }
     ],
     "skills": []
@@ -298,7 +298,7 @@
     "software": [
       {
         "name": "Blender",
-        "nameID": "blender"
+        "id": "blender"
       }
     ],
     "skills": []
@@ -318,7 +318,7 @@
     "software": [
       {
         "name": "Avid Media Composer",
-        "nameID": "avid"
+        "id": "avid"
       }
     ],
     "skills": []

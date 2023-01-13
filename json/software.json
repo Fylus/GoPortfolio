@@ -1,0 +1,119 @@
+[
+  {
+    "name": "Unity 3D",
+    "id": "unity",
+    "description": "Unity is a cross-platform game engine used to create games and interactive experiences for desktop, web, mobile, console, and virtual reality platforms. It includes a range of tools and features for designing and building games, as well as tools for animation, audio, physics, and more. Unity is popular with game developers due to its flexibility and powerful features, and is used to create a wide variety of games and other interactive experiences. Unity 3D is an essential tool for anyone looking to make a statement in the gaming industry.\n\nI chose to study media informatics because of my interest in game design, and I have been able to make use of my knowledge in Unity to create a number of small projects. I have also completed the official Unity Junior Programmer course, which gives me the confidence to attempt more complex projects in the future. I have enjoyed learning and exploring the capabilities of Unity, and I am looking forward to making many more games with this powerful game engine.",
+    "company": "Unity Technologies",
+    "img": "unity.webp",
+    "externallink": "https:\/\/unity.com\/",
+    "level": "Advanced"
+  },
+  {
+    "name": "Blender",
+    "id": "blender",
+    "description": "Blender is a free and open-source 3D computer graphics software toolset used for creating 3D models, animations, simulations, and visual effects. It includes a wide range of features for 3D modeling, texturing, rendering, compositing, and motion tracking, as well as tools for video editing and game creation. Blender is used in a variety of industries, including film, television, gaming, architecture, and product design, and is popular with professionals and hobbyists alike for its flexibility and powerful features.\n\nStarting out with Andrew Price's famous Donut Tutorial in 2020, I had a lot of fun with Blender and wanted to keep exploring. So I went on to learn more about 3D modeling, texturing and rendering, as well as some of its more advanced features. Motion tracking and compositing were also part of my repertoire, adding an extra layer of realism to my projects.\n\nUsing my experience with 3D modeling and texturing, I have created many different products, ranging from wine bottles and refrigerators to furniture and appliances. These models have been highly detailed and realistic.\n\nFor low poly projects, which can be very useful for game design and stylized visuals, I have also done a number of projects, some of which have been used in video games.\n\nBut there is still plenty more I am learning about Blender. Animation is one such area that I am still exploring, particularly geometry nodes and texture painting.\n\nI am looking forward to making many more projects with Blender in the future.",
+    "company": "Blender Foundation Inc",
+    "img": "Blender.svg",
+    "externallink": "https:\/\/www.blender.org\/",
+    "level": "Advanced"
+  },
+  {
+    "name": "IntelliJ IDEA",
+    "id": "intellij",
+    "description": "IntelliJ IDEA is an integrated development environment (IDE) developed by JetBrains for Java, Kotlin, and other programming languages. It is used to create and edit code, as well as to debug and test applications. IntelliJ IDEA offers a wide range of features and tools, making it an ideal platform for developing high-quality software applications.\n\nDuring my three years of study, I used IntelliJ almost constantly to write many Java programs for graded exercises. My professor even hired me on as a tutor to pass on my knowledge of Java and IntelliJ. I was thrilled to have the opportunity to teach others and further my own knowledge in the process. Not only did I impart my knowledge to others, but I also gained invaluable insight from my students, allowing me to gain a deeper understanding of the language and the IDE. By the end of my studies, I had become a advanced Java programmer and a well-versed IntelliJ user.",
+    "company": "Jetbrains",
+    "img": "IntelliJ.svg",
+    "externallink": "https:\/\/www.jetbrains.com\/idea\/",
+    "level": "Advanced"
+  },
+  {
+    "name": "Rider",
+    "id": "rider",
+    "description": "JetBrains Rider is a powerful integrated development environment (IDE) for C# and Unity development. It provides an intuitive user interface, advanced code editing capabilities, and a wide range of tools for debugging and testing applications. With its extensive support for C# and Unity development, Rider is a great tool for developing high-quality software and game applications.\n\nI have been using Jetbrains products for a few years, so I was very excited when I discovered Rider for Unity development. The familiar user interface and experience makes the transition from other Jetbrains products seamless. I have come to rely on Rider for its excellent refactoring, autocomplete, and code sense features, which have improved my development speed and accuracy significantly. I am looking forward to continuing to use Rider for my Unity development projects.",
+    "company": "Jetbrains",
+    "img": "Rider.svg",
+    "externallink": "https:\/\/www.jetbrains.com\/rider\/",
+    "level": "Advanced"
+  },
+  {
+    "name": "Adobe Premiere",
+    "id": "premiere",
+    "description": "Adobe Premiere is a digital video editing software used for creating high-quality films, television programs, and other video projects. It offers a wide range of features for editing, color grading, audio post-production, and visual effects. It is known for its powerful features and user-friendly interface, making it a popular choice for professional and hobbyist video editors alike.\n\nSince my training where I used Avid Media Composer, I have been using Adobe Premiere for many of my projects. Its affordability and the fact that it is included in the Adobe Creative Suite make it a great choice for those on a budget. I have used Premiere for many small clips and some short movies, where I have been able to make use of its features for video editing, audio, post-production, simple effects, and color correction. Premiere has proven to be an invaluable tool for my video editing projects.",
+    "company": "Adobe",
+    "img": "Premiere.svg",
+    "externallink": "https:\/\/www.adobe.com\/products\/premiere.html",
+    "level": "Proficient"
+  },
+  {
+    "name": "PHPStorm",
+    "id": "phpstorm",
+    "description": "PHPStorm is a powerful integrated development environment (IDE) specifically designed for PHP programming. It provides an intuitive user interface, advanced code editing capabilities, and a wide range of tools for debugging and testing applications. PHPStorm is widely used by developers for its powerful features and extensive support for PHP development.\n\nI am very familiar with Jetbrains products like IntelliJ and Rider, and I have made a few websites, including this one. Although I am still relatively inexperienced in website development, I have found PHPStorm to be a great tool for creating my portfolio. It has enabled me to quickly and easily design and develop a website that is both attractive and functional. You can see the progress of my development in website design here on my portfolio.",
+    "company": "Jetbrains",
+    "img": "PhpStorm.svg",
+    "externallink": "https:\/\/www.jetbrains.com\/phpstorm\/",
+    "level": "Proficient"
+  },
+  {
+    "name": "Avid Media Composer",
+    "id": "avid",
+    "description": "Avid Media Composer is a professional video editing software used to create and edit video content for film, television, and other forms of media. It offers a range of advanced tools and features for professional video editing, including support for high resolution formats, multi-camera editing, and audio post-production. Avid Media Composer is widely used in the film and television industry, and is known for its powerful and sophisticated editing capabilities.\n\nMy experience with Avid started in January 1, 2013, when I started my training with the Mitteldeutscher Rundfunk. During my training I had the opportunity to cut multiple television programs. After my training I was employed as a cutter for MDR for one year, where I was responsible for editing programs on a daily basis. I also used Avid to create vacation films for guests on board the AIDA cruise ships on a weekly basis. I have since come to prefer the more cost-efficient and user-friendly programs of Adobe Premiere and Davinci Resolve, which offer a more convenient way to achieve the same results. The programs are also much less expensive, making them a more attractive choice for those on a tighter budget. Furthermore, they come with a variety of useful features, allowing users to get the most out of their editing experience.",
+    "company": "AVID",
+    "img": "avid.png",
+    "externallink": "https:\/\/www.avid.com\/media-composer",
+    "level": "Proficient"
+  },
+  {
+    "name": "Adobe Photoshop",
+    "id": "photoshop",
+    "description": "Adobe Photoshop is a powerful graphic design and photo editing software used by professional designers, photographers and hobbyists alike. It enables users to create stunning visuals for websites, posters, flyers and more. With its robust set of tools, users can easily manipulate images, work with layers and apply filters to create unique and eye-catching designs. Photoshop is an essential tool for anyone looking to make a statement with their digital art.\n\nI may not be an expert in Photoshop, but I am very familiar with the basics and I am a fast learner if I need to pick up new skills. I have used Photoshop to create a number of projects, including retouches, color corrections, and collages. With a little bit of practice, I am confident that I could quickly become more proficient in the program and unlock its full potential.",
+    "company": "Adobe",
+    "img": "Photoshop.svg",
+    "externallink": "https:\/\/www.adobe.com\/products\/photoshop.html",
+    "level": "Intermediate"
+  },
+  {
+    "name": "Android Studio",
+    "id": "androidstudio",
+    "description": "Android Studio is an integrated development environment (IDE) developed by Google for creating Android applications. It is built on the IntelliJ IDEA platform and offers a range of tools and features specifically designed for Android development. Android Studio includes a code editor, a debugger, and a emulator, as well as tools for designing and building user interfaces, testing and debugging code, and optimizing applications for performance. It is the official development environment for Android, and is widely used by developers around the world to create a range of applications for the Android platform.\n\nI have only made one app with Android Studio so far, but I was able to build on my experience with Java. It was very easy to learn Android studio, since I was already familiar with Jetbrains products. I may even develop another app soon, where I can learn the Kotlin language and then make it available in the PlayStore.",
+    "company": "Google",
+    "img": "android.webp",
+    "externallink": "https:\/\/developer.android.com\/studio",
+    "level": "Intermediate"
+  },
+  {
+    "name": "Adobe After Effects",
+    "id": "aftereffects",
+    "description": "Adobe After Effects is a digital visual effects, motion graphics, and compositing software developed by Adobe Systems. It is used to create and design animated graphics, visual effects, and compositions for film, television, video, and the web. After Effects allows users to animate, edit, and compose media in 2D and 3D space with various built-in tools and third-party plug-ins. It is widely used by professionals in the film, television, and advertising industries to create high-quality visual effects and animations.\n\nAfter Effects is an incredibly powerful tool that I've employed in many of my projects, making use of its capabilities in 2D animation, keying, and tracking. Despite the great success I've had with After Effects so far, I'm still convinced that I've only scratched the surface of what it has to offer and that there is much more I can do with this amazing tool. With its wide range of features and possibilities, After Effects can open up a world of creativity and help bring projects to life in ways that weren't previously possible.",
+    "company": "Adobe",
+    "img": "After_Effects.svg",
+    "externallink": "https:\/\/www.adobe.com\/products\/aftereffects.html",
+    "level": "Intermediate"
+  },
+  {
+    "name": "Adobe Indesign",
+    "id": "indesign",
+    "description": "Adobe InDesign is a powerful desktop publishing and page layout program used for creating professional documents such as books, magazines, brochures, flyers, and other types of print material. It offers a range of tools and features for designing and formatting documents, as well as tools for drawing, typography, and image editing. With its versatile tools and features, InDesign is the perfect program for creating high-quality print materials.\n\nI have been using InDesign for many years, mainly for creating project documentations during my studies. Despite having some experience with the program, I am by no means a professional designer. Nevertheless, I find InDesign to be a powerful and versatile tool that allows me to create high-quality print materials. I continue to use InDesign in my current projects and look forward to exploring its features even further.",
+    "company": "Adobe",
+    "img": "InDesign.svg",
+    "externallink": "https:\/\/www.adobe.com\/products\/indesign.html",
+    "level": "Intermediate"
+  },
+  {
+    "name": "Davinci Resolve",
+    "id": "davinciresolve",
+    "description": "DaVinci Resolve is a color grading and video editing software used in the film and television industry. It is developed by Blackmagic Design and is available in two versions: DaVinci Resolve Studio, which includes advanced features and tools for professional use, and DaVinci Resolve, which is a free version with basic editing and color grading capabilities. In addition to color grading and video editing, DaVinci Resolve also includes tools for audio post-production and visual effects. It is widely used by colorists, editors, and post-production professionals for its advanced features and powerful workflow\n\nI have been using the free version of DaVinci Resolve for some time now, and I must say that it has been a great experience. I have been a long-time user of Adobe Premiere, but I am now seriously contemplating making the switch to DaVinci Resolve due to its great features. I am currently working on a project that requires me to do a lot of green screen keying, and I have to say that DaVinci Resolve has all of the tools that I need to get the job done. Its user-friendly interface makes it easy to use, and the results speak for themselves. I am definitely looking forward to using DaVinci Resolve more in the future.",
+    "company": "Black Magic",
+    "img": "DaVinci_Resolve_17_logo.png",
+    "externallink": "https:\/\/www.blackmagicdesign.com\/products\/davinciresolve\/",
+    "level": "Intermediate"
+  },
+  {
+    "name": "Visual Studio Code",
+    "id": "vsc",
+    "description": "Visual Studio Code (VSC) is a free, open-source code editor developed by Microsoft. It is widely used by developers due to its versatile feature set and powerful tools, including debugging, intelligent code completion, and source control. With its intuitive user interface, VSC is an essential tool for anyone looking to quickly and easily create high-quality code.\n\nI am a big fan of Jetbrains IDEs, and so I don't use Visual Studio Code (VSC) as much as other developers, since it has fewer features. However, I do recognize the advantages of VSC - it is lightweight, has great plugins, and is highly customizable. I use VSC for small coding projects where I don't need a full IDE, or just to open and inspect some code files, since it is faster. Overall, I am able to work with VSC when the need arises.",
+    "company": "Microssoft",
+    "img": "vsc.svg",
+    "externallink": "https:\/\/code.visualstudio.com\/",
+    "level": "Intermediate"
+  }
+]

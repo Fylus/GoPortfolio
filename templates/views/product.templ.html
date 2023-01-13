@@ -5,7 +5,62 @@
 <canvas></canvas>
 {{ template "header" . }}
 <main>
-    {{template "links" .}}
+    <div class='wrapper'>
+        <div class='projectpage box'>
+            {{ if .Noproduct }}
+            <div class="projectpage-header">
+                <h1 class="projectpage-title">404</h1>
+                <p class="projectpage-error">Sadly, the {{.Type}} your looking for does not exist.</p>
+            </div>
+            {{else}}
+            <div class="projectpage-content">
+                <div class="projectpage-main">
+                    <div class="projectpage-header-cont">
+                        <h1 class="projectpage-title" id="firsttitle">{{.Title}}</h1>
+                    </div>
+                    <div class="projectpage-text">
+                        <p>{{.Description}}</p>
+                    </div>
+                    <div class="projectpage-media">
+                    </div>
+                </div>
+                <div class="projectpage-title" id="secondtitle">{{.Title}}</div>
+                <div class="projectpage-content-details">
+                    <div class="projectpage-image">
+                        <img id="projectpage-image" src="/static/images/hires/{{.Image}}" alt="{{.Title}}">
+                    </div>
+                    <div class="projectpage-table">
+                        {{range $key, $value := .Table}}
+                        {{ if $value }}
+                        <div class="projectpage-table-row">
+                            <div class="projectpage-table-cell">
+                                <p class="projectpage-table-cell-title">{{$key}}</p>
+                            </div>
+                            <div class='projectpage-table-cell'>
+                                {{range $value}}
+                                <div class='projectpage-table-cell-content'>
+                                    {{if .link }}
+                                    <a href='/{{.link}}'>{{.name}}</a>
+                                    {{else}}
+                                    {{.name}}
+                                    {{end}}
+                                </div>
+                                {{end}}
+                            </div>
+                        </div>
+                        {{end}}
+                        {{end}}
+                      {{ if .External}}
+                        <div class="projectpage-buttons">
+                            <a href="{{.External}}" target="_blank" class="projectpage-link">External</a>
+                        </div>
+                        {{end}}
+                    </div>
+                </div>
+            </div>
+            {{end}}
+        </div>
+    </div>
 </main>
 {{ template "footer" . }}
 </body>

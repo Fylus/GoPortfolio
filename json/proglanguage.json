@@ -1,0 +1,38 @@
+[
+  {
+    "name": "Java",
+    "level": "Advanced"
+  },
+  {
+    "name": "C#",
+    "level": "Advanced"
+  },
+  {
+    "name": "HTML",
+    "level": "Proficient"
+  },
+  {
+    "name": "JavaScript",
+    "level": "Proficient"
+  },
+  {
+    "name": "CSS",
+    "level": "Intermediate"
+  },
+  {
+    "name": "PHP",
+    "level": "Intermediate"
+  },
+  {
+    "name": "SQL",
+    "level": "Intermediate"
+  },
+  {
+    "name": "Golang",
+    "level": "Intermediate"
+  },
+  {
+    "name": "Python",
+    "level": "Novice"
+  }
+]

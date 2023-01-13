@@ -18,9 +18,7 @@ hamburgercontainer.click(function () {
 });
 
 links.click(function () {
-    if ($(window).width() < 600) {
         if (menuShown) {
             hamburgercontainer.click();
         }
-    }
 });

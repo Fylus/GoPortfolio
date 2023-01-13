@@ -5,6 +5,7 @@ COPY ../main.go .
 RUN mkdir -p vendor
 COPY ../go.mod .
 COPY ../go.sum .
+RUN go mod download
 RUN go mod vendor
 RUN go build -o MyPortfolioApp main.go
 
@@ -16,4 +17,4 @@ COPY --from=build /GoPortfolio/MyPortfolioApp .
 #COPY templates/ templates/
 #COPY seiten/ seiten/
 EXPOSE 8080
-CMD ["/app/MyPortfolioApp"]
+CMD ["/app/GoPortfolio"]

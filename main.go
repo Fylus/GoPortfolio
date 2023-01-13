@@ -9,13 +9,14 @@ func main() {
 	st := flag.Bool("static", false, "Static")
 	flag.Parse()
 
+	buildDatabase()
+
 	if *st {
 		static()
 	} else {
 		dynamic()
 	}
 
-	buildDatabase()
 	//static()
 }
 
