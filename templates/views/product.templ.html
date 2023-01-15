@@ -1,4 +1,5 @@
 {{ define "product" }}
+{{$html := .HTML}}
 <html lang="en">
 {{ template "head" .}}
 <body>
@@ -40,7 +41,7 @@
                                 {{range $value}}
                                 <div class='projectpage-table-cell-content'>
                                     {{if .link }}
-                                    <a href='/{{.link}}'>{{.name}}</a>
+                                    <a href='/{{.link}}{{$html}}'>{{.name}}</a>
                                     {{else}}
                                     {{.name}}
                                     {{end}}
@@ -50,7 +51,7 @@
                         </div>
                         {{end}}
                         {{end}}
-                      {{ if .External}}
+                        {{ if .External}}
                         <div class="projectpage-buttons">
                             <a href="{{.External}}" target="_blank" class="projectpage-link">External</a>
                         </div>

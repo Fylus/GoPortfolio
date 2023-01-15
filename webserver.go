@@ -1,20 +1,20 @@
+/*
+ This file is the webbserver to serve the portfolio website on a specified port.
+ The webserver is started by running the main.go file.
+ The webserver uses the gin web framework.
+ The webserver uses the data structures defined in webdata.go.
+*/
 package main
 
 import (
-	"flag"
 	"github.com/gin-gonic/gin"
-	"go.mongodb.org/mongo-driver/bson"
 	"log"
 	"net/http"
+	"os"
 	"path/filepath"
 )
 
-var (
-	tmpDir = flag.String("tmp", "templates", "Template -Dir.")
-)
-
 const (
-	statDir = "./static" // statische Seiten: html , css , js , etc.
 	//srcDir    = "./seiten" // Verzeichnis für Blog -Beiträge
 	tmplDir      = "./templates/" // HTML -Template Verzeichnis
 	templFile    = "*.templ.html"
@@ -24,86 +24,53 @@ const (
 	errorTempl   = "error"
 )
 
+// startWebserver starts the webserver on the specified port and sets up the routes
 func startWebServer() {
 	router := gin.Default()
+	log.Println("Load templates from: ", tmplDir)
 	router.LoadHTMLGlob(filepath.Join(tmplDir, "**/", templFile))
+	log.Println("Load static files from: ", statDir)
 	router.Static("/static", statDir)
+	log.Println("Set up routes")
 	router.NoRoute(pageNotFound)
-	router.GET("/", makeHomeHandler)
+	router.GET("/", homeHandler)
 	router.GET("/impressum", impressumHandler)
 	router.GET("/project/:projectID", projectHandler)
 	router.GET("/tool/:toolID", toolHandler)
-	log.Print("Listening on :9000 ....")
-	err := router.Run(":9000")
+	port := ":" + os.Getenv("PORT")
+	log.Printf("Listening on :%v ....", port)
+	err := router.Run(port)
 	if err != nil {
-		log.Fatal("Error starting web server: ", err)
+		log.Fatalln("Error starting web server: ", err)
 	}
 }
 
+// toolHandler handles the request for a tool page, used from software-sites
 func toolHandler(context *gin.Context) {
 	tool, status := getToolFromDatabase(context.Param("toolID"))
 	context.HTML(status, productTempl, tool)
 }
 
+// projectHandler handles the request for a project page, used from project-sites
 func projectHandler(context *gin.Context) {
 	product, status := getProjectFromDatabase(context.Param("projectID"))
 	context.HTML(status, productTempl, product)
 }
 
+// impressumHandler handles the request for the impressum page
 func impressumHandler(context *gin.Context) {
-	ps := Page{Title: "Impressum"}
+	ps := impressumData()
 	context.HTML(http.StatusOK, impTempl, ps)
 }
 
+// pageNotFound handles the request for a page that does not exist
 func pageNotFound(c *gin.Context) {
 	ps := Page{Title: "Page not found"}
 	c.HTML(http.StatusNotFound, errorTempl, ps)
 }
 
-func makeHomeHandler(c *gin.Context) {
-	type Home struct {
-		Page
-		Categories  map[string][]bson.M
-		Education   []bson.M
-		ProgLang    []bson.M
-		Software    []bson.M
-		OtherSkills []bson.M
-		Languages   []bson.M
-	}
-	getSkillsFromDatabase()
-
-	home := Home{
-		Page: Page{
-			Title: "Portfolio",
-			CSS:   "home",
-		},
-		Categories:  getAllProjectsInCategories(),
-		Education:   getEducationFromDatabase(),
-		ProgLang:    getProgLangFromDatabase(),
-		Software:    getSoftwareFromDatabase(),
-		OtherSkills: getOtherSkillsFromDatabase(),
-		Languages:   getLanguageFromDatabase(),
-	}
-	// fill struct Home
+// homeHandler handles the request for the home page
+func homeHandler(c *gin.Context) {
+	home := homeData()
 	c.HTML(http.StatusOK, homeTempl, home)
-}
-
-type Page struct {
-	Title string
-	CSS   string
-	Product
-}
-
-type Product struct {
-	Description string
-	Image       string
-	Table       map[string][]bson.M
-	Type        string
-	External    string
-	Noproduct   bool
-}
-
-type TableMap struct {
-	Name    string
-	Content []string
 }

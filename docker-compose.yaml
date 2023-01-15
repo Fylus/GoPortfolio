@@ -1,0 +1,47 @@
+version: '3'
+
+services:
+  gomdb:
+    image: mongo:latest
+    container_name: gomdb
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: root
+      MONGO_INITDB_ROOT_PASSWORD: rootpassword
+    ports:
+      - "27017:27017"
+    volumes:
+      - mdbdata:/data/db
+  goapp:
+    image: gowebapp:latest
+    container_name: gowebapp
+    depends_on:
+      - "gomdb"
+    links:
+      - "gomdb"
+    build:
+      context: .
+      dockerfile: "Dockerfile.goapp"
+      args:
+        - NO_CACHE=1
+#    volumes:
+    #      - [HERE COMES YOUR OUTPUT PATH]:/app/output
+    #     EXAMPLE: - C:\Users\Admin\Desktop:/app/output
+    #      - [HERE COMES YOUR INPUT PATH]:/app/input
+    #     EXAMPLE: - C:\Users\Admin\Desktop\input:/app/input
+    environment:
+      # Database Environments
+      - DB_NAME=gomdb
+      - DB_USER=root
+      - DB_PASS=rootpassword
+      - DB_PORT=27017
+      # Server Environments
+      - PORT=8080
+      # Application Environments
+      #     Make Webserver (0) or Static Website (1)
+      - BUILD_STATIC=0
+      #     Not recommended to change zip file name, but you can (default is "resources.zip") | Not possible on default input path
+      - ZIP_NAME=resources.zip
+    ports:
+      - "8080:8080"
+volumes:
+  mdbdata:

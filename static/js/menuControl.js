@@ -18,7 +18,7 @@ hamburgercontainer.click(function () {
 });
 
 links.click(function () {
-        if (menuShown) {
-            hamburgercontainer.click();
-        }
+    if (menuShown) {
+        hamburgercontainer.click();
+    }
 });

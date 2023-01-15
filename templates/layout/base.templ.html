@@ -6,10 +6,10 @@
 {{ template "header" . }}
 <main>
     {{if .Error}}
-        {{ template "404" . }}
+    {{ template "404" . }}
     {{else}}
-        {{ .Content }}
-        {{template "links" .}}
+    {{ .Content }}
+    {{template "links" .}}
     {{end}}
 </main>
 {{ template "footer" . }}

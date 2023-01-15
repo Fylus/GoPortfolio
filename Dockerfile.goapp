@@ -1,0 +1,26 @@
+# Use the official Golang image as the base image
+FROM golang:latest AS build
+
+WORKDIR /gowebapp
+COPY ./main.go .
+COPY database.go .
+COPY webbuilder.go .
+COPY webserver.go .
+COPY webdata.go .
+RUN mkdir -p vendor
+COPY go.mod .
+COPY go.sum .
+RUN go mod vendor
+RUN go build -o GoPortfolio main.go database.go webbuilder.go webserver.go webdata.go
+
+
+FROM debian
+WORKDIR /app
+COPY --from=build /gowebapp/GoPortfolio .
+COPY static/ static/
+COPY templates/ templates/
+COPY input/ input/
+EXPOSE 8080
+CMD ["/app/GoPortfolio"]
+
+
